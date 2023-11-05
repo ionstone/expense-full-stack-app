@@ -1,0 +1,21 @@
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <mat-card fxFlex="25">
+        <mat-toolbar color="primary">Expense Manager Login</mat-toolbar>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" style="display: flex; flex-direction: column;padding: 20px">
+            <div fxFlex>
+                <mat-form-field fxFlex>
+                  <input matInput placeholder="E-mail" formControlName="email">
+                </mat-form-field>
+            </div>
+            <div fxFlex>
+                <mat-form-field fxFlex>
+                  <input matInput type="password"  placeholder="Password" formControlName="password">
+                </mat-form-field>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                <button mat-raised-button type="submit">Login</button>
+                <a mat-button routerLink="/register">Register</a>
+            </div>
+        </form>
+    </mat-card>
+</div>
