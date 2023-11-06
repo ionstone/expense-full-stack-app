@@ -8,7 +8,7 @@ Transaction Type
 
 - id
 - name
-- Expense,Income,Transfer
+- Expense,Income
 
 Transaction category
 
